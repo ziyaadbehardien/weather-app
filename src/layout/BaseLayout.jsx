@@ -14,7 +14,6 @@ import useAlerts from '../features/alerts/useAlerts';
 
 const NAV_ITEMS = [
   { path: '/', label: 'Forecast', icon: 'lni-cloudy-sun' },
-  { path: '/map', label: 'Map', icon: 'lni-map-marker' },
   { path: '/alerts', label: 'Alerts', icon: 'lni-alarm' },
 ];
 

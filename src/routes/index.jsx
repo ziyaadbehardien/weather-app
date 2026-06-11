@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import BaseLayout from '../layout/BaseLayout';
 import ForecastPage from '../pages/ForecastPage';
-import MapPage from '../pages/MapPage';
 import AlertsPage from '../pages/AlertsPage';
 
 const router = createBrowserRouter([
@@ -10,7 +9,6 @@ const router = createBrowserRouter([
     element: <BaseLayout />,
     children: [
       { index: true, element: <ForecastPage /> },
-      { path: 'map', element: <MapPage /> },
       { path: 'alerts', element: <AlertsPage /> },
     ],
   },

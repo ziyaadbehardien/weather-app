@@ -7,7 +7,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { store } from './app/store';
 import theme from './assets/theme';
 import router from './routes';
-import 'leaflet/dist/leaflet.css';
 import './assets/scss/main.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
