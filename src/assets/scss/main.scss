@@ -1,0 +1,47 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+// Loading spinner helper used with Lineicons, e.g.
+// <i className="lni lni-spinner-1 lni-is-spinning" />
+.lni-is-spinning {
+  display: inline-block;
+  animation: lni-spin 1s linear infinite;
+}
+
+@keyframes lni-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.leaflet-container {
+  font: inherit;
+  height: 100%;
+  width: 100%;
+  background: #0b0b0d;
+}
+
+// Night-mode base map: invert the light OSM tiles to dark. Applied only to
+// the base layer so the radar overlay keeps its true colours.
+.map-tiles-night {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg)
+    saturate(0.25) brightness(0.7);
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #141417;
+  color: #f5f0dc;
+}
+
+// Horizontal scrollers (hourly strip)
+.scroll-x {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
